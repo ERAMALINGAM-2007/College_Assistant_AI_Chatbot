@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>College Assistant AI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+    <link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+
+<body>
+
+<div class="chat-container">
+
+    <header>
+
+        <div class="logo">
+
+            🎓 College Assistant AI
+
+        </div>
+
+        <button id="clearBtn">
+
+            + New Chat
+
+        </button>
+
+    </header>
+
+    <div id="chatBox">
+
+        <div class="bot-message">
+
+            <h3>👋 Hello!</h3>
+
+            <p>
+                I'm your personal <b>College Assistant AI</b>.
+            </p>
+
+            <p>
+                I can help you with:
+            </p>
+
+            <div class="features">
+
+                <span>💻 Programming</span>
+
+                <span>🗄️ DBMS</span>
+
+                <span>🤖 Artificial Intelligence</span>
+
+                <span>📚 Machine Learning</span>
+
+                <span>📄 Resume Building</span>
+
+                <span>🎯 Interview Preparation</span>
+
+            </div>
+
+            <p style="margin-top:20px;">
+                Start by asking me any question.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="input-area">
+
+        <input
+            id="message"
+            type="text"
+            placeholder="Message College Assistant..."
+        >
+
+        <button id="sendBtn">
+
+            ➤
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
